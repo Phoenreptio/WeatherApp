@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weatherapp</title>
+  </head>
+  <body>
+
+<div class="weather-app"> 
+<header>
+<form id="city-form"> 
+<input class="search-input" type="search" id="city-input" placeholder="Enter a city" />
+<input class="search-button" type="submit" value="Search"/>
+</form>
+</header>
+
+<hr>
+
+<div class="weather-information">
+<div class="weather-icon"> 
+<h1   id="city-display" > 
+Bern
+</h1>
+<p class = "details">
+<p id="current-time"> Saturday 12:00 </br>
+<p> Humidity: <strong> <span style="color:green;">55% </strong> </span>, Wind: <strong> <span style="color: green"> 9km/h</strong> 
+</p> 
+</div>
+<div class="temperature">
+<span class="image">⛅</span>
+<span class="icon" id="current-temperature">27</span>
+<span class="unit">°C</span>
+</div>
+</div>
+
+
+<br>
+
+<footer> 
+    This project was coded by <a href="https://www.shecodes.io/"target="_blank" > Diandra Serpieri </a> and is <a href="https://github.com/shecodesio/weather" target="_blank" >on GitHub </a> and <a href= "https://shecodes-weather.netlify.app/" target="_blank" > hosted on Netfily</a>
+</footer>
+</div>
+
+<script src="src/index.js"></script>
+
+</body>
+</html>
+
+
